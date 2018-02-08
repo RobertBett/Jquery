@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('form').submit(function(){
+				// alert("hello");
+				// $(this).show('.f',
+				$(this).hide('.d');
+
+			});
+		});
+		
+	</script>
+</head>
+<body>
+	<table>
+  <tr>
+    <th class="f">First Name</th>
+    <td class="d">g</td>
+    <th> Last Name</th>
+    <td></td>
+    <th> Email Address</th>
+    <td></td>
+    <th> Contact</th>
+    <td></td>
+    <!-- <th>Savings</th> -->
+ 
+</table>
+     <form>
+     	First name<input type=" text" name="First_name">
+     	Last Name<input type=" text" name="Last_name">
+     	Email Address<input type="text" name="Email">
+     	Contact #<input type="text" name="number">
+     	 <input type="submit" value ='Add User'>
+     </form>
+</body>
+</html>

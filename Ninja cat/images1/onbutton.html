@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>on button</title>
+	<script type="text/javascript" src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+	<script type="text/javascript">
+		 $(document).ready(function(){
+         $('.new').click(function(){
+         $('div').append('<h3> Click me for a Surprise</h3>','<button class= "new1">New Button</button>');
+      });
+        $(document).on('click', '.new1', function(){
+         alert('Im a New Button!');
+     });
+     });
+	</script>
+</head>
+<body>
+	<h1> Static Content</h1>
+	<div>
+	<!-- 	<button class="alert"> Click me for a message</button>
+		<button class="alert"> Click me for a message</button>
+		<button class="alert"> Click me for a message</button> -->
+		<button class="new"> Click me to add new buttons</button>
+	</div>
+
+</body>
+</html>
